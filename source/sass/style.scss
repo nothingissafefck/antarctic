@@ -1,13 +1,7 @@
 // Vendor
-// ---------------------------------
-
 @import "vendor/normalize";
-// Swiper 7.4.1
-// @import "vendor/swiper";
 
 // Global
-// ---------------------------------
-
 @import "variables";
 @import "mixins";
 @import "global/fonts";
@@ -16,17 +10,18 @@
 @import "global/container";
 
 // Blocks
-// ---------------------------------
-
 @import "blocks/btn";
-@import "blocks/modal";
+@import "blocks/header";
+@import "blocks/hero";
+@import "blocks/about";
+@import "blocks/advantages";
+@import "blocks/products";
+@import "blocks/feedback";
+@import "blocks/contacts";
+@import "blocks/footer";
 @import "blocks/custom-input";
 @import "blocks/custom-toggle";
 @import "blocks/custom-select";
-
-// ---------------------------------
-
-// ❗❗❗ запрещено использовать изображения в css, касается как jpg \ png, так и svg
 
 // ❗ обязательно используйте mixin hover-focus для отключения ховеров на тач устройствах
 /* @mixin hover-focus {

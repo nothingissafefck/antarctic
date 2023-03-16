@@ -1,17 +1,29 @@
 .advantages {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 73px;
+  padding-bottom: 120px;
+
+  @media (max-width: $vp-max-tablet) {
+    margin-bottom: 80px;
+    padding-bottom: 100px;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 46px;
+    padding-bottom: 66px;
+  }
 }
 
 .advantages__image {
   position: absolute;
   z-index: -1;
-  height: 100%;
   width: 100%;
+  height: 100%;
   background-color: $color-sail;
 
   img {
     width: 100%;
+    height: 100%;
   }
 }
 

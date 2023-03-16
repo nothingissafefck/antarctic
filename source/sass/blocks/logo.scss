@@ -1,5 +1,6 @@
 .logo svg {
   color: $color-alice-blue;
+  vertical-align: top;
   cursor: pointer;
 
   @media (max-width: $vp-max-tablet) {

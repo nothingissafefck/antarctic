@@ -25,10 +25,11 @@
   <div class="wrapper">
     <header class="header">
       <div class="container header__container">
-        <a class="header__logo logo" href="index.html">
+        <a class="logo header__logo" href="index.html">
           <svg width="70" height="38" role="img" aria-hidden="true" focusable="false">
             <use href="img/sprite.svg#logo"></use>
           </svg>
+          <span class="visually-hidden">Логотип сайта круизов в Антарктику.</span>
         </a>
 
         <button class="header__toggle" type="button">
@@ -71,21 +72,19 @@
 
     <main>
       <section class="hero">
-        <div class="hero__container">
-          <picture class="hero__image">
-            <source type="image/webp" media="(max-width: 767px)" srcset="img/main-mobile.webp 1x, img/main-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x">
-            <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
-            <source media="(max-width: 767px)" srcset="img/main-mobile.png 1x, img/main-mobile@2x.png 2x">
-            <source media="(max-width: 1023px)" srcset="img/main-tablet.png 1x, img/main-tablet@2x.png 2x">
-            <img src="img/main-desktop.png" width="1366" height="650" aria-hidden="true" alt="Фотография с горами Антарктики.">
-          </picture>
+        <picture class="hero__image">
+          <source type="image/webp" media="(max-width: 767px)" srcset="img/main-mobile.webp 1x, img/main-mobile@2x.webp 2x">
+          <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
+          <source media="(max-width: 767px)" srcset="img/main-mobile.png 1x, img/main-mobile@2x.png 2x">
+          <source media="(max-width: 1023px)" srcset="img/main-tablet.png 1x, img/main-tablet@2x.png 2x">
+          <img src="img/main-desktop.png" width="1366" height="650" aria-hidden="true" alt="Фотография с горами Антарктики.">
+        </picture>
 
-          <div class="container">
-            <div class="hero__content">
-              <h1>Круизы в&nbsp;Антарктику</h1>
-              <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
-            </div>
+        <div class="container">
+          <div class="hero__container">
+            <h1>Круизы в&nbsp;Антарктику</h1>
+            <p>Волшебный мир айсбергов&nbsp;и&nbsp;пингвинов</p>
           </div>
         </div>
       </section>
@@ -128,7 +127,71 @@
     </main>
 
     <footer class="footer">
-      <div class="container"></div>
+      <div class="container footer__container">
+        <a class="logo footer__logo" href="index.html">
+          <svg width="70" height="38" role="img" aria-hidden="true" focusable="false">
+            <use href="img/sprite.svg#logo"></use>
+          </svg>
+          <span class="visually-hidden">Вернуться на главную.</span>
+        </a>
+
+        <nav class="footer__navigation">
+          <ul class="footer__navigation-list reset-list">
+            <li>
+              <a class="footer__navigation-link" href="#!">
+                Преимущества
+              </a>
+            </li>
+
+            <li>
+              <a class="footer__navigation-link" href="#!">
+                Направления
+              </a>
+            </li>
+
+            <li>
+              <a class="footer__navigation-link" href="#!">
+                Ближайшие круизы
+              </a>
+            </li>
+
+            <li>
+              <a class="footer__navigation-link" href="#!">
+                Контакты
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="footer__social-list reset-list">
+          <li>
+            <a href="https://ok.ru/">
+              <svg aria-hidden="true" focusable="false" width="20" height="20">
+                <use href="img/sprite.svg#icon-ok"></use>
+              </svg>
+              <span class="visually-hidden">Одноклассники.</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://dzen.ru/">
+              <svg aria-hidden="true" focusable="false" width="20" height="20">
+                <use href="img/sprite.svg#icon-zen"></use>
+              </svg>
+              <span class="visually-hidden">Дзен.</span>
+            </a>
+          </li>
+
+          <li>
+            <a href="https://www.reddit.com/">
+              <svg aria-hidden="true" focusable="false" width="20" height="20">
+                <use href="img/sprite.svg#icon-reddit"></use>
+              </svg>
+              <span class="visually-hidden">Реддит.</span>
+            </a>
+          </li>
+        </ul>
+      </div>
     </footer>
   </div>
 

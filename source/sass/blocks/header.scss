@@ -6,11 +6,10 @@
 
 .header__container {
   display: flex;
-  align-items: center;
   justify-content: space-between;
   height: 100%;
-  padding-top: 34px;
-  padding-bottom: 34px;
+  padding-top: 35px;
+  padding-bottom: 35px;
 
   @media (max-width: $vp-max-tablet) {
     padding-top: 30px;
@@ -24,6 +23,12 @@
 }
 
 .header__navigation {
+  padding-top: 10px;
+
+  @media (max-width: $vp-max-tablet) {
+    padding-top: 1px;
+  }
+
   @media (max-width: $vp-max-mobile) {
     display: none;
     width: 100%;
@@ -33,7 +38,7 @@
 .header__navigation-list {
   display: flex;
   flex-wrap: wrap;
-  column-gap: 33px;
+  column-gap: 34px;
 
   @media (max-width: $vp-max-tablet) {
     column-gap: 24px;
@@ -51,6 +56,7 @@
   display: block;
   cursor: pointer;
   font-weight: 500;
+  line-height: 18px;
 
   @media (max-width: $vp-max-tablet) {
     font-size: 14px;

@@ -32,6 +32,12 @@
   clip-path: inset(100%);
 }
 
+.reset-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
 .scroll-lock-ios {
   position: fixed;
 
@@ -59,3 +65,4 @@
 .js-focus-visible :focus:not(.focus-visible) {
   outline: none;
 }
+

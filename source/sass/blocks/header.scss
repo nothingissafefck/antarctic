@@ -1,7 +1,6 @@
 .header {
-  position: relative;
+  position: absolute;
   z-index: 1;
-  background-color: $color-sail;
   width: 100%;
 }
 
@@ -26,6 +25,7 @@
 
 .header__navigation {
   @media (max-width: $vp-max-mobile) {
+    display: none;
     width: 100%;
   }
 }

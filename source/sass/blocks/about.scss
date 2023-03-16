@@ -1,5 +1,13 @@
 .about {
-  margin-bottom: 100px;
+  margin-bottom: 145px;
+
+  @media (max-width: $vp-max-tablet) {
+    margin-bottom: 94px;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 85px;
+  }
 }
 
 .about__container {

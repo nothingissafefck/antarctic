@@ -78,7 +78,7 @@
           <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
           <source media="(max-width: 767px)" srcset="img/main-mobile.png 1x, img/main-mobile@2x.png 2x">
           <source media="(max-width: 1023px)" srcset="img/main-tablet.png 1x, img/main-tablet@2x.png 2x">
-          <img src="img/main-desktop.png" width="1366" height="650" aria-hidden="true" alt="Фотография с горами Антарктики.">
+          <img src="img/main-desktop.png" width="1366" height="650" alt="Фотография с горами Антарктики.">
         </picture>
 
         <div class="container">
@@ -100,13 +100,49 @@
 
           <picture class="about__image">
             <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
-            <img src="img/penguins.png" srcset="img/penguins@2x.png 2x" width="560" height="301" aria-hidden="true" alt="Фотография с пингвинами.">
+            <img src="img/penguins.png" srcset="img/penguins@2x.png 2x" width="560" height="301" alt="Фотография с пингвинами.">
           </picture>
         </div>
       </section>
 
       <section class="advantages">
-        <div class="container"></div>
+        <picture class="advantages__image">
+          <source media="(max-width: 767px)" srcset="img/advantages-mobile.jpg 1x, img/advantages-mobile@2x.jpg 2x">
+          <source media="(max-width: 1023px)" srcset="img/advantages-tablet.jpg 1x, img/advantages-tablet@2x.jpg 2x">
+          <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" aria-hidden="true" alt="">
+        </picture>
+
+        <div class="container advantages__container">
+          <h2>Преимущества</h2>
+          <ul class="advantages__list reset-list">
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon--liner" aria-hidden="true" focusable="false" width="27" height="44">
+                <use href="img/sprite.svg#icon-liner"></use>
+              </svg>
+              <h3>Небольшой круизный&nbsp;лайнер</h3>
+              <p>Круизный лайнер, рассчитанный всего лишь на&nbsp;300&nbsp;гостей, поможет избежать шума и&nbsp;очередей
+                и&nbsp;даст возможность насладиться видами и&nbsp;природой.</p>
+            </li>
+
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon--checkmarks" aria-hidden="true" focusable="false" width="38" height="44">
+                <use href="img/sprite.svg#icon-checkmarks"></use>
+              </svg>
+              <h3>Система все&nbsp;включено</h3>
+              <p>Все наши круизы работают по&nbsp;системе &laquo;Все Включено&raquo;. Великолепные блюда и&nbsp;безлимитный
+                бар доступны для вас 24&nbsp;часа.</p>
+            </li>
+
+            <li class="advantages__item">
+              <svg class="advantages__icon advantages__icon--liner-sideways" aria-hidden="true" focusable="false" width="44" height="44">
+                <use href="img/sprite.svg#icon-liner-sideways"></use>
+              </svg>
+              <h3>Экскурсионные туры на&nbsp;Zodiac</h3>
+              <p>Экскурсионные туры к&nbsp;берегам Антарктиды совершаются на&nbsp;оборудованных лодках типа Zodiac c&nbsp;опытными
+                экскурсоводами.</p>
+            </li>
+          </ul>
+        </div>
       </section>
 
       <section class="products">

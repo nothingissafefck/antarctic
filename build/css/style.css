@@ -748,6 +748,7 @@ button,
 .hero__container {
   position: relative;
   width: 100%;
+  margin-bottom: 120px;
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -771,13 +772,13 @@ button,
   padding: 270px 0 278px 95px;
 }
 
-.hero__content h2,
+.hero__content h1,
 .hero__content p {
   color: #f9fbfd;
   text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.hero__content h2 {
+.hero__content h1 {
   margin: 0 0 12px;
   font-weight: 700;
   font-size: 54px;
@@ -789,6 +790,33 @@ button,
   font-weight: 400;
   font-size: 20px;
   line-height: 24px;
+}
+
+.about {
+  margin-bottom: 100px;
+}
+
+.about__container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+}
+
+.about__content {
+  padding-right: 45px;
+}
+
+.about__content h2 {
+  margin: 0 0 24px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 42px;
+}
+
+.about__content p {
+  margin: 0;
 }
 
 .custom-input,
@@ -1382,6 +1410,7 @@ button,
   }
 
   .hero__container {
+    margin-bottom: 90px;
     -webkit-filter: none;
     filter: none;
   }
@@ -1390,7 +1419,7 @@ button,
     padding: 267px 0 276px;
   }
 
-  .hero__content h2 {
+  .hero__content h1 {
     font-size: 50px;
     line-height: 61px;
   }
@@ -1398,6 +1427,25 @@ button,
   .hero__content p {
     font-size: 18px;
     line-height: 22px;
+  }
+
+  .about__container {
+    grid-gap: 30px;
+  }
+
+  .about__content {
+    padding: 0;
+  }
+
+  .about__content h2 {
+    margin-right: 26px;
+    margin-bottom: 16px;
+    font-size: 26px;
+    line-height: 140%;
+  }
+
+  .about__image {
+    padding-top: 10px;
   }
 }
 
@@ -1527,18 +1575,35 @@ button,
     padding-left: 0;
   }
 
+  .hero__container {
+    margin-bottom: 57px;
+  }
+
   .hero__content {
     padding: 175px 0 178px;
   }
 
-  .hero__content h2 {
+  .hero__content h1 {
     font-size: 36px;
-    line-height: 125%;
+    line-height: 45px;
   }
 
   .hero__content p {
     font-size: 16px;
     line-height: 140%;
+  }
+
+  .about__container {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
+  .about__content h2 {
+    font-size: 24px;
+  }
+
+  .about__image {
+    padding-top: 13px;
   }
 }
 

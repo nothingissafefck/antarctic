@@ -1,10 +1,16 @@
 .hero__container {
   position: relative;
   width: 100%;
+  margin-bottom: 120px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 
   @media (max-width: $vp-max-tablet) {
+    margin-bottom: 90px;
     filter: none;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 57px;
   }
 }
 
@@ -33,13 +39,13 @@
     padding: 175px 0 178px;
   }
 
-  h2,
+  h1,
   p {
     color: $color-alice-blue;
     text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   }
 
-  h2 {
+  h1 {
     margin: 0 0 12px;
     font-weight: 700;
     font-size: 54px;
@@ -52,7 +58,7 @@
 
     @media (max-width: $vp-max-mobile) {
       font-size: 36px;
-      line-height: 125%;
+      line-height: 45px;
     }
   }
 

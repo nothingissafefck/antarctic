@@ -1,6 +1,14 @@
 .products {
   position: relative;
-  margin-bottom: 100px;
+  margin-bottom: 120px;
+
+  @media (max-width: $vp-max-tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 65px;
+  }
 
   h2 {
     margin-bottom: 50px;
@@ -120,11 +128,4 @@
       opacity: 0.5;
     }
   }
-}
-
-.products__btn {
-  padding: 10px 47px;
-  font-size: 14px;
-  line-height: 20px;
-  font-weight: 600;
 }

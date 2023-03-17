@@ -1,20 +1,17 @@
 .btn {
   display: inline-flex;
-  padding: 15px 47px;
-
+  justify-content: center;
+  padding: 10px 47px;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 21px;
   color: $color-tangaroa;
-
   background-color: $color-alice-blue;
   border: none;
   cursor: pointer;
 
   &:disabled {
     opacity: 0.5;
-
     pointer-events: none;
-  }
-
-  @include hover-focus {
-    opacity: 0.8;
   }
 }

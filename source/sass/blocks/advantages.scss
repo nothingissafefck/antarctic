@@ -57,8 +57,9 @@
 }
 
 .advantages__list {
-  display: flex;
-  column-gap: 40px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
   margin: 0;
   padding: 0;
 
@@ -67,8 +68,8 @@
   }
 
   @media (max-width: $vp-max-mobile) {
-    flex-direction: column;
-    row-gap: 30px;
+    grid-template-columns: 1fr;
+    grid-row-gap: 30px;
   }
 }
 

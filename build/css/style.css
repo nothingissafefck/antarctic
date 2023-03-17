@@ -658,6 +658,15 @@ button,
   cursor: pointer;
 }
 
+.btn:hover,
+.btn:focus {
+  background-color: #cfe2f3;
+}
+
+.btn:active {
+  background-color: #9fc5e8;
+}
+
 .btn:disabled {
   opacity: 0.5;
   pointer-events: none;
@@ -667,6 +676,15 @@ button,
   color: #f9fbfd;
   vertical-align: top;
   cursor: pointer;
+}
+
+.logo svg:hover,
+.logo svg:focus {
+  color: #6fa8dc;
+}
+
+.logo svg:active {
+  color: #45818e;
 }
 
 @-webkit-keyframes slide-in {
@@ -727,6 +745,15 @@ button,
   cursor: pointer;
   font-weight: 500;
   line-height: 18px;
+}
+
+.header__navigation-link:hover,
+.header__navigation-link:focus {
+  color: #6fa8dc;
+}
+
+.header__navigation-link:active {
+  color: #45818e;
 }
 
 .header__toggle {
@@ -1109,6 +1136,16 @@ button,
   color: rgba(1, 28, 64, 0.7);
   -webkit-text-fill-color: rgba(1, 28, 64, 0.7);
   background-color: #f9fbfd;
+  cursor: pointer;
+}
+
+.feedback__form input:hover,
+.feedback__form input:focus {
+  background-color: #cfe2f3;
+}
+
+.feedback__form input:active {
+  background-color: #9fc5e8;
 }
 
 .input-message {
@@ -1169,6 +1206,10 @@ button,
   cursor: pointer;
 }
 
+.feedback__checkbox-wrapper label span:hover {
+  color: #cfe2f3;
+}
+
 .feedback__checkbox-wrapper label span::before {
   content: "";
   position: absolute;
@@ -1193,6 +1234,10 @@ button,
   border-radius: 1px;
 }
 
+.feedback__checkbox-wrapper label input + span:hover::before {
+  background-color: #cfe2f3;
+}
+
 .feedback__btn {
   margin-top: 26px;
   margin-bottom: 8px;
@@ -1206,6 +1251,7 @@ button,
   -webkit-box-shadow: 0 0 0 3px #f9fbfd;
   box-shadow: 0 0 0 3px #f9fbfd;
   border-radius: 1px;
+  background-color: #9fc5e8;
 }
 
 .contacts {
@@ -1333,11 +1379,30 @@ button,
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  color: #f9fbfd;
+}
+
+.footer__social-list .footer__social-link:hover,
+.footer__social-list .footer__social-link:focus {
+  color: #6fa8dc;
+}
+
+.footer__social-list .footer__social-link:active {
+  color: #45818e;
 }
 
 .footer__navigation-link {
   font-weight: 500;
   line-height: 18px;
+}
+
+.footer__navigation-link:hover,
+.footer__navigation-link:focus {
+  color: #6fa8dc;
+}
+
+.footer__navigation-link:active {
+  color: #45818e;
 }
 
 .custom-input,

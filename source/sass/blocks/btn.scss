@@ -10,6 +10,15 @@
   border: none;
   cursor: pointer;
 
+  &:hover,
+  &:focus {
+    background-color: $color-pattens-blue;
+  }
+
+  &:active {
+    background-color: $color-sail;
+  }
+
   &:disabled {
     opacity: 0.5;
     pointer-events: none;

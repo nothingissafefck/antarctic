@@ -147,6 +147,16 @@
     color: rgba(1, 28, 64, 0.7);
     -webkit-text-fill-color: rgba(1, 28, 64, 0.7);
     background-color: $color-alice-blue;
+    cursor: pointer;
+
+    &:hover,
+    &:focus {
+      background-color: $color-pattens-blue;
+    }
+
+    &:active {
+      background-color: $color-sail;
+    }
   }
 }
 
@@ -198,6 +208,10 @@
     line-height: 13px;
     cursor: pointer;
 
+    &:hover {
+      color: $color-pattens-blue;
+    }
+
     @media (max-width: $vp-max-mobile) {
       padding-top: 18px;
       padding-left: 28px;
@@ -232,6 +246,12 @@
     box-shadow: 0 0 0 3px $color-alice-blue;
     border-radius: 1px;
   }
+
+  input + span:hover {
+    &::before {
+      background-color: $color-pattens-blue;
+    }
+  }
 }
 
 .feedback__btn {
@@ -245,6 +265,7 @@
     outline: 2px solid $color-blue;
     box-shadow: 0 0 0 3px $color-alice-blue;
     border-radius: 1px;
+    background-color: $color-sail;
   }
 
   @media (max-width: $vp-max-mobile) {

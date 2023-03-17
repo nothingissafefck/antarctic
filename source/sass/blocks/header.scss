@@ -133,6 +133,15 @@
   font-weight: 500;
   line-height: 18px;
 
+  &:hover,
+  &:focus {
+    color: $color-jordy-blue;
+  }
+
+  &:active {
+    color: $color-jelly-bean;
+  }
+
   @media (max-width: $vp-max-tablet) {
     font-size: 14px;
     line-height: 17px;

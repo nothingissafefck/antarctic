@@ -73,6 +73,16 @@
 
   .footer__social-link {
     display: flex;
+    color: $color-alice-blue;
+
+    &:hover,
+    &:focus {
+      color: $color-jordy-blue;
+    }
+
+    &:active {
+      color: $color-jelly-bean;
+    }
   }
 
   svg {
@@ -86,6 +96,15 @@
 .footer__navigation-link {
   font-weight: 500;
   line-height: 18px;
+
+  &:hover,
+  &:focus {
+    color: $color-jordy-blue;
+  }
+
+  &:active {
+    color: $color-jelly-bean;
+  }
 
   @media (max-width: $vp-max-tablet) {
     font-size: 12px;

@@ -23,7 +23,7 @@
 
 <body>
   <div class="wrapper">
-    <header class="header">
+    <header class="header" data-menu>
       <div class="container header__container">
         <a class="logo header__logo" href="index.html">
           <svg width="70" height="38" role="img" aria-hidden="true" focusable="false">
@@ -32,7 +32,7 @@
           <span class="visually-hidden">Логотип сайта круизов в Антарктику.</span>
         </a>
 
-        <button class="header__toggle" type="button">
+        <button class="header__toggle" type="button" data-menu-button>
           <span class="header__toggle-line"></span>
 
           <span class="visually-hidden">
@@ -403,23 +403,23 @@
                 <div class="feedback__form-container">
                   <span>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</span>
 
-                  <label data-validate-type="text" data-required data-message-base="Ты пидор">
+                  <label data-validate-type="text" data-required data-message-base="Это поле обязательно">
                     <input type="text" name="name" placeholder="Имя" required>
                     <span class="visually-hidden">Имя.</span>
                   </label>
 
-                  <label data-validate-type="phone" data-required data-message-base="Ты пидор">
+                  <label data-validate-type="phone" data-required data-message-base="Это поле обязательно">
                     <input type="tel" name="phone" placeholder="Телефон" required>
                     <span class="visually-hidden">Телефон.</span>
                   </label>
 
-                  <label data-validate-type="email" data-required data-message-base="Ты пидор">
+                  <label data-validate-type="email" data-required data-message-base="Это поле обязательно">
                     <input type="email" name="email" placeholder="Email" required>
                     <span class="visually-hidden">Email.</span>
                   </label>
 
                   <div class="feedback__checkbox-wrapper">
-                    <label data-validate-type="checkbox" data-required data-message-base="Ты пидор">
+                    <label data-validate-type="checkbox" data-required>
                       <input type="checkbox" name="agreement" required checked>
                       <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                     </label>

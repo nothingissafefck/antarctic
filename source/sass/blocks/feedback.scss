@@ -150,25 +150,15 @@
   }
 }
 
-@keyframes bounce {
-  0% {
-    transform: translateY(-50%) scale(0.9) rotate(0);
-  }
-
-  100% {
-    transform: translateY(-50%) scale(1.1) rotate(360deg);
-  }
-}
-
 .input-message {
   position: absolute;
   top: 50%;
   right: 5px;
   transform: translateY(-50%);
+  font-size: 12px;
 
   &.is-invalid {
-    color: red;
-    animation: bounce 0.8s infinite forwards;
+    color: $color-invalid;
   }
 }
 

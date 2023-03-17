@@ -434,7 +434,27 @@
       </section>
 
       <section class="contacts">
-        <div class="container"></div>
+        <div class="container contacts__container">
+          <picture class="contacts__image">
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/map-mobile.webp 1x, img/map-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/map-tablet.webp 1x, img/map-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/map-desktop.webp 1x, img/map-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/map-mobile.png 1x, img/map-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/map-tablet.png 1x, img/map-tablet@2x.png 2x">
+            <img src="img/map-desktop.png" srcset="img/map-desktop@2x.png 2x" width="560" height="306" alt="Наш адрес на карте.">
+          </picture>
+
+          <div class="contacts__content">
+            <p>У&nbsp;вас ещё остались вопросы или сомнения? Приезжайте к&nbsp;нам в&nbsp;офис и&nbsp;мы&nbsp;вам все
+              расскажем.</p>
+
+            <address class="contacts__address">
+              <span class="contacts__location">г. Санкт Петербург,
+                ул. Большая Конюшенная, 19/8</span>
+              <a class="contacts__phone" href="tel:88002000000">8-800-200-00-00</a>
+            </address>
+          </div>
+        </div>
       </section>
     </main>
 

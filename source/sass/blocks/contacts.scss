@@ -1,0 +1,132 @@
+.contacts {
+  margin-bottom: 120px;
+
+  @media (max-width: $vp-max-tablet) {
+    margin-bottom: 100px;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 65px;
+  }
+}
+
+.contacts__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 30px;
+  padding: 21px 0 0 60px;
+
+  @media (max-width: $vp-max-tablet) {
+    padding-top: 0;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+.contacts__image {
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 217px;
+    left: 249px;
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/icon-map-pin.svg");
+  }
+
+  @media (max-width: $vp-max-tablet) {
+    &::before {
+      left: 109px;
+    }
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    &::before {
+      top: 224px;
+      left: 112px;
+    }
+  }
+}
+
+.contacts__content {
+  padding-top: 75px;
+  padding-left: 66px;
+  padding-right: 8px;
+
+  @media (max-width: $vp-max-tablet) {
+    padding-top: 65px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 6px;
+    padding-top: 57px;
+  }
+
+  p {
+    margin: 0;
+    padding: 0;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 27px;
+  }
+}
+
+.contacts__address {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  padding-left: 27px;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 24px;
+
+  @media (max-width: $vp-max-tablet) {
+    padding-top: 27px;
+  }
+}
+
+.contacts__location {
+  position: relative;
+  margin-bottom: 22px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 18px;
+    height: 22px;
+    background-image: url("../img/svg/icon-map-pin.svg");
+  }
+
+  @media (max-width: $vp-max-tablet) {
+    white-space: pre-line;
+
+    &::before {
+      top: 4px;
+    }
+  }
+}
+
+.contacts__phone {
+  position: relative;
+  color: $color-tangaroa;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -28px;
+    width: 18px;
+    height: 18px;
+    background-image: url("../img/svg/icon-phone.svg");
+  }
+}

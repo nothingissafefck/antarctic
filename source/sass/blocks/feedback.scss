@@ -2,6 +2,10 @@
   position: relative;
   margin-bottom: 100px;
   overflow: hidden;
+
+  @media (max-width: $vp-max-mobile) {
+    margin-bottom: 0;
+  }
 }
 
 .feedback__image {
@@ -34,6 +38,7 @@
     text-align: center;
 
     @media (max-width: $vp-max-mobile) {
+      margin-bottom: 5px;
       padding: 0;
     }
   }
@@ -98,7 +103,9 @@
       text-align: start;
     }
 
-    @media (max-width: $vp-max-tablet) {
+    @media (max-width: $vp-max-mobile) {
+      margin-bottom: 29px;
+      line-height: 25px;
       text-align: center;
     }
   }
@@ -114,6 +121,8 @@
   }
 
   @media (max-width: $vp-max-mobile) {
+    margin-bottom: 58px;
+    padding: 34px 30px;
     width: auto;
   }
 
@@ -170,25 +179,30 @@
     line-height: 13px;
     cursor: pointer;
 
+    @media (max-width: $vp-max-mobile) {
+      padding-top: 18px;
+      padding-left: 28px;
+      text-align: start;
+    }
+
     &::before {
       content: "";
       position: absolute;
       top: 20px;
       left: 0;
+      display: block;
       width: 18px;
       height: 18px;
       background-color: $color-alice-blue;
+
+      @media (max-width: $vp-max-mobile) {
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
   input:checked + span::before {
-    content: "";
-    position: absolute;
-    top: 20px;
-    left: 0;
-    display: block;
-    width: 18px;
-    height: 18px;
     background-image: url("../img/svg/checkmark.svg");
     background-repeat: no-repeat;
     background-position: center;
@@ -203,6 +217,9 @@
   padding: 11px 40px 10px;
 
   @media (max-width: $vp-max-mobile) {
+    margin-top: 20px;
+    padding: 11px 40px;
+    width: 100%;
     min-width: 0;
   }
 }

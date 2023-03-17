@@ -1069,6 +1069,7 @@ button,
 }
 
 .feedback__form label {
+  position: relative;
   display: block;
   margin-top: 20px;
 }
@@ -1090,14 +1091,55 @@ button,
   background-color: #f9fbfd;
 }
 
-.feedback__form .is-invalid input {
-  -webkit-box-shadow: 0 0 0 1px #d00f0f;
-  box-shadow: 0 0 0 1px #d00f0f;
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.9) rotate(0);
+    transform: translateY(-50%) scale(0.9) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50%) scale(1.1) rotate(360deg);
+    transform: translateY(-50%) scale(1.1) rotate(360deg);
+  }
 }
 
-.feedback__form .is-valid input {
-  -webkit-box-shadow: 0 0 0 1px #13b313;
-  box-shadow: 0 0 0 1px #13b313;
+@keyframes bounce {
+  0% {
+    -webkit-transform: translateY(-50%) scale(0.9) rotate(0);
+    transform: translateY(-50%) scale(0.9) rotate(0);
+  }
+
+  100% {
+    -webkit-transform: translateY(-50%) scale(1.1) rotate(360deg);
+    transform: translateY(-50%) scale(1.1) rotate(360deg);
+  }
+}
+
+.input-message {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.input-message.is-invalid {
+  color: red;
+  -webkit-animation: bounce 0.8s infinite forwards;
+  animation: bounce 0.8s infinite forwards;
+}
+
+.is-invalid input,
+.is-invalid input[type=checkbox] + span::before {
+  -webkit-box-shadow: 0 0 0 2px #d00f0f;
+  box-shadow: 0 0 0 2px #d00f0f;
+}
+
+.is-valid input,
+.is-valid input[type=checkbox] + span::before {
+  -webkit-box-shadow: 0 0 0 2px #13b313;
+  box-shadow: 0 0 0 2px #13b313;
 }
 
 .feedback__checkbox-wrapper label {
@@ -1149,12 +1191,26 @@ button,
   background-position: center;
 }
 
+.feedback__checkbox-wrapper label input:focus-visible + span::before {
+  outline: 2px solid #0000ff;
+  -webkit-box-shadow: 0 0 0 3px #f9fbfd;
+  box-shadow: 0 0 0 3px #f9fbfd;
+  border-radius: 1px;
+}
+
 .feedback__btn {
   margin-top: 26px;
   margin-bottom: 8px;
   text-align: center;
   min-width: 303px;
   padding: 11px 40px 10px;
+}
+
+.feedback__btn:focus-visible {
+  outline: 2px solid #0000ff;
+  -webkit-box-shadow: 0 0 0 3px #f9fbfd;
+  box-shadow: 0 0 0 3px #f9fbfd;
+  border-radius: 1px;
 }
 
 .contacts {

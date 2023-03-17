@@ -127,6 +127,7 @@
   }
 
   label {
+    position: relative;
     display: block;
     margin-top: 20px;
 
@@ -147,13 +148,41 @@
     -webkit-text-fill-color: rgba(1, 28, 64, 0.7);
     background-color: $color-alice-blue;
   }
+}
 
-  .is-invalid input {
-    box-shadow: 0 0 0 1px $color-invalid;
+@keyframes bounce {
+  0% {
+    transform: translateY(-50%) scale(0.9) rotate(0);
   }
 
-  .is-valid input {
-    box-shadow: 0 0 0 1px $color-valid;
+  100% {
+    transform: translateY(-50%) scale(1.1) rotate(360deg);
+  }
+}
+
+.input-message {
+  position: absolute;
+  top: 50%;
+  right: 5px;
+  transform: translateY(-50%);
+
+  &.is-invalid {
+    color: red;
+    animation: bounce 0.8s infinite forwards;
+  }
+}
+
+.is-invalid {
+  input,
+  input[type="checkbox"] + span::before {
+    box-shadow: 0 0 0 2px $color-invalid;
+  }
+}
+
+.is-valid {
+  input,
+  input[type="checkbox"] + span::before {
+    box-shadow: 0 0 0 2px $color-valid;
   }
 }
 
@@ -207,6 +236,12 @@
     background-repeat: no-repeat;
     background-position: center;
   }
+
+  input:focus-visible + span::before {
+    outline: 2px solid $color-blue;
+    box-shadow: 0 0 0 3px $color-alice-blue;
+    border-radius: 1px;
+  }
 }
 
 .feedback__btn {
@@ -215,6 +250,12 @@
   text-align: center;
   min-width: 303px;
   padding: 11px 40px 10px;
+
+  &:focus-visible {
+    outline: 2px solid $color-blue;
+    box-shadow: 0 0 0 3px $color-alice-blue;
+    border-radius: 1px;
+  }
 
   @media (max-width: $vp-max-mobile) {
     margin-top: 20px;

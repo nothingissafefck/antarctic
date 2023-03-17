@@ -398,28 +398,28 @@
               <p>Забронируйте тур за&nbsp;3-6 месяцев до&nbsp;даты выезда и&nbsp;сэкономьте до&nbsp;50%</p>
             </div>
 
-            <div class="feedback__form">
+            <div class="feedback__form" data-form-validate data-callback="base">
               <form action="https://echo.htmlacademy.ru/" method="post">
                 <div class="feedback__form-container">
                   <span>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</span>
 
-                  <label data-validate-type="text" data-required>
+                  <label data-validate-type="text" data-required data-message-base="Ты пидор">
                     <input type="text" name="name" placeholder="Имя" required>
                     <span class="visually-hidden">Имя.</span>
                   </label>
 
-                  <label data-validate-type="phone" data-required>
+                  <label data-validate-type="phone" data-required data-message-base="Ты пидор">
                     <input type="tel" name="phone" placeholder="Телефон" required>
                     <span class="visually-hidden">Телефон.</span>
                   </label>
 
-                  <label data-validate-type="email" data-required>
+                  <label data-validate-type="email" data-required data-message-base="Ты пидор">
                     <input type="email" name="email" placeholder="Email" required>
                     <span class="visually-hidden">Email.</span>
                   </label>
 
                   <div class="feedback__checkbox-wrapper">
-                    <label data-validate-type="checkbox" data-required>
+                    <label data-validate-type="checkbox" data-required data-message-base="Ты пидор">
                       <input type="checkbox" name="agreement" required checked>
                       <span>Я&nbsp;согласен на&nbsp;обработку моих персональных данных</span>
                     </label>

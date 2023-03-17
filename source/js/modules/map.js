@@ -8,7 +8,9 @@ const createMap = ({id, initials, placemark}) => {
 
 export function initMap(mapData) {
   if (apiLoaded) {
-    return createMap(mapData);
+    createMap(mapData);
+
+    return;
   }
 
   const scriptElement = document.createElement('script');

@@ -1221,18 +1221,8 @@ button,
   padding: 21px 0 0 60px;
 }
 
-.contacts__image {
-  position: relative;
-}
-
-.contacts__image::before {
-  content: "";
-  position: absolute;
-  top: 217px;
-  left: 249px;
-  width: 18px;
-  height: 22px;
-  background-image: url("../img/svg/icon-map-pin.svg");
+.contacts__map {
+  height: 306px;
 }
 
 .contacts__content {
@@ -2092,8 +2082,8 @@ button,
     padding-top: 0;
   }
 
-  .contacts__image::before {
-    left: 109px;
+  .contacts__map {
+    height: 335px;
   }
 
   .contacts__content {
@@ -2375,7 +2365,7 @@ button,
   }
 
   .products__item > div {
-    margin-top: 306px;
+    margin-top: 313px;
   }
 
   .products__item h3 {
@@ -2454,9 +2444,8 @@ button,
     flex-direction: column-reverse;
   }
 
-  .contacts__image::before {
-    top: 224px;
-    left: 112px;
+  .contacts__map {
+    height: 316px;
   }
 
   .contacts__content {

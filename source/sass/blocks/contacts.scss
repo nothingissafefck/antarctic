@@ -26,30 +26,15 @@
   }
 }
 
-.contacts__image {
-  position: relative;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 217px;
-    left: 249px;
-    width: 18px;
-    height: 22px;
-    background-image: url("../img/svg/icon-map-pin.svg");
-  }
+.contacts__map {
+  height: 306px;
 
   @media (max-width: $vp-max-tablet) {
-    &::before {
-      left: 109px;
-    }
+    height: 335px;
   }
 
   @media (max-width: $vp-max-mobile) {
-    &::before {
-      top: 224px;
-      left: 112px;
-    }
+    height: 316px;
   }
 }
 

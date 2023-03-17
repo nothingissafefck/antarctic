@@ -2,6 +2,7 @@ import {iosVhFix} from './utils/ios-vh-fix';
 import {initModals} from './modules/modals/init-modals';
 import {Form} from './modules/form-validate/form';
 import {initMenu} from './modules/menu';
+import {initMap} from './modules/map';
 
 // ---------------------------------
 
@@ -20,6 +21,25 @@ window.addEventListener('DOMContentLoaded', () => {
   window.addEventListener('load', () => {
     initModals();
     initMenu();
+    initMap({
+      id: 'map',
+      initials: {
+        center: [59.9387165, 30.3230474],
+        controls: [],
+        zoom: 16,
+      },
+      placemark: [
+        {
+          hintContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
+        },
+        {
+          iconImageHref: 'img/svg/icon-map-pin.svg',
+          iconImageSize: [18, 22],
+          iconLayout: 'default#image',
+          iconShadow: false,
+        }
+      ],
+    });
     const form = new Form();
     window.form = form;
     form.init();

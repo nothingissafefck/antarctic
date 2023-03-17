@@ -67,7 +67,7 @@
   height: 386px;
   overflow: hidden;
 
-  & > div {
+  .products__content {
     display: flex;
     flex-direction: column;
     height: 386px;
@@ -128,8 +128,9 @@
     }
   }
 
-  &:hover {
-    & > div {
+  &:hover,
+  &:focus-within {
+    .products__content {
       margin-top: 0;
       background-color: $color-tangaroa;
     }

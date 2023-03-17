@@ -72,14 +72,16 @@
 
     <main>
       <section class="hero">
-        <picture class="hero__image">
-          <source type="image/webp" media="(max-width: 767px)" srcset="img/main-mobile.webp 1x, img/main-mobile@2x.webp 2x">
-          <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x">
-          <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
-          <source media="(max-width: 767px)" srcset="img/main-mobile.png 1x, img/main-mobile@2x.png 2x">
-          <source media="(max-width: 1023px)" srcset="img/main-tablet.png 1x, img/main-tablet@2x.png 2x">
-          <img src="img/main-desktop.png" width="1366" height="650" alt="Фотография с горами Антарктики.">
-        </picture>
+        <div class="hero__image">
+          <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/main-mobile.webp 1x, img/main-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/main-tablet.webp 1x, img/main-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/main-desktop.webp 1x, img/main-desktop@2x.webp 2x">
+            <source media="(max-width: 767px)" srcset="img/main-mobile.png 1x, img/main-mobile@2x.png 2x">
+            <source media="(max-width: 1023px)" srcset="img/main-tablet.png 1x, img/main-tablet@2x.png 2x">
+            <img src="img/main-desktop.png" width="1366" height="650" alt="Фотография с горами Антарктики.">
+          </picture>
+        </div>
 
         <div class="container">
           <div class="hero__container">
@@ -97,20 +99,23 @@
               круизный лайнер отвезет вас на&nbsp;край Земли, где вы&nbsp;сможете увидеть: ледяные айсберги, несколько
               видов пингвинов, китов, морских котиков и&nbsp;многое другое.</p>
           </div>
-
-          <picture class="about__image">
-            <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
-            <img src="img/penguins.png" srcset="img/penguins@2x.png 2x" width="560" height="301" alt="Фотография с пингвинами.">
-          </picture>
+          <div class="about__image">
+            <picture>
+              <source type="image/webp" srcset="img/penguins.webp 1x, img/penguins@2x.webp 2x">
+              <img src="img/penguins.png" srcset="img/penguins@2x.png 2x" width="560" height="301" alt="Фотография с пингвинами.">
+            </picture>
+          </div>
         </div>
       </section>
 
       <section class="advantages" id="advantages">
-        <picture class="advantages__image">
-          <source media="(max-width: 767px)" srcset="img/advantages-mobile.jpg 1x, img/advantages-mobile@2x.jpg 2x">
-          <source media="(max-width: 1023px)" srcset="img/advantages-tablet.jpg 1x, img/advantages-tablet@2x.jpg 2x">
-          <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" aria-hidden="true" alt="">
-        </picture>
+        <div class="advantages__image">
+          <picture>
+            <source media="(max-width: 767px)" srcset="img/advantages-mobile.jpg 1x, img/advantages-mobile@2x.jpg 2x">
+            <source media="(max-width: 1023px)" srcset="img/advantages-tablet.jpg 1x, img/advantages-tablet@2x.jpg 2x">
+            <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" aria-hidden="true" alt="">
+          </picture>
+        </div>
 
         <div class="container advantages__container">
           <h2>Преимущества</h2>
@@ -150,18 +155,20 @@
           <h2>Ближайшие круизы</h2>
           <ul class="products__list reset-list">
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/astoria-mobile.webp 1x, img/products/astoria-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/astoria-tablet.webp 1x, img/products/astoria-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/astoria-desktop.webp 1x, img/products/astoria-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/astoria-mobile.png 1x, img/products/astoria-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/astoria-tablet.png 1x, img/products/astoria-tablet@2x.png 2x">
-                <img src="img/products/astoria-desktop.png" srcset="img/products/astoria-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Астория.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/astoria-mobile.webp 1x, img/products/astoria-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/astoria-tablet.webp 1x, img/products/astoria-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/astoria-desktop.webp 1x, img/products/astoria-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/astoria-mobile.png 1x, img/products/astoria-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/astoria-tablet.png 1x, img/products/astoria-tablet@2x.png 2x">
+                  <img src="img/products/astoria-desktop.png" srcset="img/products/astoria-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Астория.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Астория"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -179,18 +186,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/eline-mobile.webp 1x, img/products/eline-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/eline-tablet.webp 1x, img/products/eline-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/eline-desktop.webp 1x, img/products/eline-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/eline-mobile.png 1x, img/products/eline-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/eline-tablet.png 1x, img/products/eline-tablet@2x.png 2x">
-                <img src="img/products/eline-desktop.png" srcset="img/products/eline-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Элайн.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/eline-mobile.webp 1x, img/products/eline-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/eline-tablet.webp 1x, img/products/eline-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/eline-desktop.webp 1x, img/products/eline-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/eline-mobile.png 1x, img/products/eline-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/eline-tablet.png 1x, img/products/eline-tablet@2x.png 2x">
+                  <img src="img/products/eline-desktop.png" srcset="img/products/eline-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Элайн.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз “Элайн”</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
                   <dt>Порт отправления</dt>
@@ -208,18 +217,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/atlantis-mobile.webp 1x, img/products/atlantis-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.webp 1x, img/products/atlantis-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/atlantis-desktop.webp 1x, img/products/atlantis-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/atlantis-mobile.png 1x, img/products/atlantis-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.png 1x, img/products/atlantis-tablet@2x.png 2x">
-                <img src="img/products/atlantis-desktop.png" srcset="img/products/atlantis-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Атлантис.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/atlantis-mobile.webp 1x, img/products/atlantis-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.webp 1x, img/products/atlantis-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/atlantis-desktop.webp 1x, img/products/atlantis-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/atlantis-mobile.png 1x, img/products/atlantis-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.png 1x, img/products/atlantis-tablet@2x.png 2x">
+                  <img src="img/products/atlantis-desktop.png" srcset="img/products/atlantis-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Атлантис.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Атлантис"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -237,18 +248,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/odysseus-mobile.webp 1x, img/products/odysseus-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.webp 1x, img/products/odysseus-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/odysseus-desktop.webp 1x, img/products/odysseus-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/odysseus-mobile.png 1x, img/products/odysseus-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.png 1x, img/products/odysseus-tablet@2x.png 2x">
-                <img src="img/products/odysseus-desktop.png" srcset="img/products/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Одиссей.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/odysseus-mobile.webp 1x, img/products/odysseus-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.webp 1x, img/products/odysseus-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/odysseus-desktop.webp 1x, img/products/odysseus-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/odysseus-mobile.png 1x, img/products/odysseus-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.png 1x, img/products/odysseus-tablet@2x.png 2x">
+                  <img src="img/products/odysseus-desktop.png" srcset="img/products/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Одиссей.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Одиссей"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Чили - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -266,18 +279,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/olympia-mobile.webp 1x, img/products/olympia-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/olympia-tablet.webp 1x, img/products/olympia-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/olympia-desktop.webp 1x, img/products/olympia-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/olympia-mobile.png 1x, img/products/olympia-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/olympia-tablet.png 1x, img/products/olympia-tablet@2x.png 2x">
-                <img src="img/products/olympia-desktop.png" srcset="img/products/olympia-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Олимпия.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/olympia-mobile.webp 1x, img/products/olympia-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/olympia-tablet.webp 1x, img/products/olympia-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/olympia-desktop.webp 1x, img/products/olympia-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/olympia-mobile.png 1x, img/products/olympia-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/olympia-tablet.png 1x, img/products/olympia-tablet@2x.png 2x">
+                  <img src="img/products/olympia-desktop.png" srcset="img/products/olympia-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Олимпия.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Олимпия"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -295,18 +310,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/aurora-tablet.webp 1x, img/products/aurora-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/aurora-desktop.webp 1x, img/products/aurora-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/aurora-mobile.png 1x, img/products/aurora-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/aurora-tablet.png 1x, img/products/aurora-tablet@2x.png 2x">
-                <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Аврора.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/aurora-mobile.webp 1x, img/products/aurora-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/aurora-tablet.webp 1x, img/products/aurora-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/aurora-desktop.webp 1x, img/products/aurora-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/aurora-mobile.png 1x, img/products/aurora-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/aurora-tablet.png 1x, img/products/aurora-tablet@2x.png 2x">
+                  <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Аврора.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Аврора"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Антарктида - Чили</dd>
                   <dt>Порт отправления</dt>
@@ -324,18 +341,20 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/leonor-mobile.webp 1x, img/products/leonor-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/leonor-tablet.webp 1x, img/products/leonor-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/leonor-desktop.webp 1x, img/products/leonor-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/leonor-mobile.png 1x, img/products/leonor-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/leonor-tablet.png 1x, img/products/leonor-tablet@2x.png 2x">
-                <img src="img/products/leonor-desktop.png" srcset="img/products/leonor-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Леонор.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/leonor-mobile.webp 1x, img/products/leonor-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/leonor-tablet.webp 1x, img/products/leonor-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/leonor-desktop.webp 1x, img/products/leonor-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/leonor-mobile.png 1x, img/products/leonor-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/leonor-tablet.png 1x, img/products/leonor-tablet@2x.png 2x">
+                  <img src="img/products/leonor-desktop.png" srcset="img/products/leonor-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Леонор.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Леонор"</h3>
-                <dl>
+                <dl tabindex="-1">
                   <dt>Маршрут</dt>
                   <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
                   <dt>Порт отправления</dt>
@@ -353,16 +372,18 @@
             </li>
 
             <li class="products__item">
-              <picture class="products__image">
-                <source type="image/webp" media="(max-width: 767px)" srcset="img/products/minion-mobile.webp 1x, img/products/minion-mobile@2x.webp 2x">
-                <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/minion-tablet.webp 1x, img/products/minion-tablet@2x.webp 2x">
-                <source type="image/webp" srcset="img/products/minion-desktop.webp 1x, img/products/minion-desktop@2x.webp 2x">
-                <source media="(max-width: 767px)" srcset="img/products/minion-mobile.png 1x, img/products/minion-mobile@2x.png 2x">
-                <source media="(max-width: 1023px)" srcset="img/products/minion-tablet.png 1x, img/products/minion-tablet@2x.png 2x">
-                <img src="img/products/minion-desktop.png" srcset="img/products/minion-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Минион.">
-              </picture>
+              <div class="products__image">
+                <picture>
+                  <source type="image/webp" media="(max-width: 767px)" srcset="img/products/minion-mobile.webp 1x, img/products/minion-mobile@2x.webp 2x">
+                  <source type="image/webp" media="(max-width: 1023px)" srcset="img/products/minion-tablet.webp 1x, img/products/minion-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/products/minion-desktop.webp 1x, img/products/minion-desktop@2x.webp 2x">
+                  <source media="(max-width: 767px)" srcset="img/products/minion-mobile.png 1x, img/products/minion-mobile@2x.png 2x">
+                  <source media="(max-width: 1023px)" srcset="img/products/minion-tablet.png 1x, img/products/minion-tablet@2x.png 2x">
+                  <img src="img/products/minion-desktop.png" srcset="img/products/minion-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Минион.">
+                </picture>
+              </div>
 
-              <div>
+              <div class="products__content">
                 <h3>Круиз "Минион&nbsp;-&nbsp;1"</h3>
                 <dl>
                   <dt>Маршрут</dt>
@@ -387,11 +408,13 @@
       <section class="feedback">
         <div class="container">
           <div class="feedback__container">
-            <picture class="feedback__image">
-              <source media="(max-width: 767px)" srcset="img/form-mountaines-mobile.png 1x, img/form-mountaines-mobile@2x.png 2x">
-              <source media="(max-width: 1023px)" srcset="img/form-mountains-tablet.png 1x, img/form-mountains-tablet@2x.png 2x">
-              <img src="img/form-mountains-desktop.png" srcset="img/form-mountains-desktop@2x.png 2x" width="1366" height="555" aria-hidden="true" alt="">
-            </picture>
+            <div class="feedback__image">
+              <picture>
+                <source media="(max-width: 767px)" srcset="img/form-mountaines-mobile.png 1x, img/form-mountaines-mobile@2x.png 2x">
+                <source media="(max-width: 1023px)" srcset="img/form-mountains-tablet.png 1x, img/form-mountains-tablet@2x.png 2x">
+                <img src="img/form-mountains-desktop.png" srcset="img/form-mountains-desktop@2x.png 2x" width="1366" height="555" aria-hidden="true" alt="">
+              </picture>
+            </div>
 
             <div class="feedback__content">
               <h2>Раннее бронирование</h2>

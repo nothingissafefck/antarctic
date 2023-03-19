@@ -22,9 +22,16 @@
   overflow: hidden;
   background-color: $color-sail;
 
+  picture {
+    display: flex;
+    width: 100%;
+    height: 100%;
+  }
+
   img {
-    min-width: 100%;
-    min-height: 100%;
+    object-fit: cover;
+    width: 100%;
+    object-position: 50% 100%;
   }
 }
 

@@ -17,7 +17,7 @@
     &.is-open {
       position: fixed;
       top: 0;
-      right: 0;
+      left: 36px;
       height: 100vh;
       background-color: transparent;
 
@@ -25,24 +25,21 @@
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto 1fr;
-        row-gap: 24px;
-        padding-left: 51px;
+        row-gap: 22px;
+        padding-top: 17px;
+        padding-left: 15px;
         background-color: $color-alice-blue;
-        clip-path: inset(0 0 0 36px);
         animation: slide-in 0.3s;
       }
 
       .header__logo {
         justify-self: flex-start;
-      }
-
-      .header__logo svg {
         color: $color-tangaroa;
       }
 
       .header__toggle {
         justify-self: flex-end;
-        margin-right: -15px;
+        margin-right: 20px;
       }
 
       .header__toggle-line {
@@ -67,7 +64,9 @@
 
       .header__navigation {
         display: flex;
+        flex-direction: column;
         grid-column: 1/-1;
+        overflow: scroll;
       }
 
       .header__navigation-list {

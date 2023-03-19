@@ -14,6 +14,7 @@ export function initMap(mapData) {
   }
 
   const scriptElement = document.createElement('script');
+  scriptElement.async = true;
   scriptElement.src = 'https://api-maps.yandex.ru/2.1/?lang=ru_RU';
   scriptElement.addEventListener('load', () => {
     window.ymaps.ready(() => {

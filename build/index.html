@@ -32,7 +32,7 @@
           <span class="visually-hidden">Логотип сайта круизов в Антарктику.</span>
         </a>
 
-        <button class="header__toggle" type="button" data-menu-button>
+        <button class="header__toggle" type="button" data-menu-close>
           <span class="header__toggle-line"></span>
 
           <span class="visually-hidden">
@@ -43,25 +43,25 @@
         <nav class="header__navigation">
           <ul class="header__navigation-list reset-list">
             <li>
-              <a class="header__navigation-link" href="#advantages">
+              <a class="header__navigation-link" href="#advantages" data-menu-close>
                 Преимущества
               </a>
             </li>
 
             <li>
-              <a class="header__navigation-link" href="#!">
+              <a class="header__navigation-link" href="#!" data-menu-close>
                 Направления
               </a>
             </li>
 
             <li>
-              <a class="header__navigation-link" href="#products">
+              <a class="header__navigation-link" href="#products" data-menu-close>
                 Ближайшие круизы
               </a>
             </li>
 
             <li>
-              <a class="header__navigation-link" href="#contacts">
+              <a class="header__navigation-link" href="#contacts" data-menu-close>
                 Контакты
               </a>
             </li>
@@ -111,9 +111,12 @@
       <section class="advantages" id="advantages">
         <div class="advantages__image">
           <picture>
+            <source type="image/webp" media="(max-width: 767px)" srcset="img/advantages-mobile.webp 1x, img/advantages-mobile@2x.webp 2x">
+            <source type="image/webp" media="(max-width: 1023px)" srcset="img/advantages-tablet.webp 1x, img/advantages-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="img/advantages-desktop.webp 1x, img/advantages-desktop@2x.webp 2x">
             <source media="(max-width: 767px)" srcset="img/advantages-mobile.jpg 1x, img/advantages-mobile@2x.jpg 2x">
             <source media="(max-width: 1023px)" srcset="img/advantages-tablet.jpg 1x, img/advantages-tablet@2x.jpg 2x">
-            <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" aria-hidden="true" alt="">
+            <img src="img/advantages-desktop.jpg" srcset="img/advantages-desktop@2x.jpg 2x" width="1366" height="562" aria-hidden="true" alt="" loading="lazy">
           </picture>
         </div>
 
@@ -162,7 +165,7 @@
                   <source type="image/webp" srcset="img/products/astoria-desktop.webp 1x, img/products/astoria-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/astoria-mobile.png 1x, img/products/astoria-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/astoria-tablet.png 1x, img/products/astoria-tablet@2x.png 2x">
-                  <img src="img/products/astoria-desktop.png" srcset="img/products/astoria-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Астория.">
+                  <img src="img/products/astoria-desktop.png" srcset="img/products/astoria-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Астория." loading="lazy">
                 </picture>
               </div>
 
@@ -193,7 +196,7 @@
                   <source type="image/webp" srcset="img/products/eline-desktop.webp 1x, img/products/eline-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/eline-mobile.png 1x, img/products/eline-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/eline-tablet.png 1x, img/products/eline-tablet@2x.png 2x">
-                  <img src="img/products/eline-desktop.png" srcset="img/products/eline-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Элайн.">
+                  <img src="img/products/eline-desktop.png" srcset="img/products/eline-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Элайн." loading="lazy">
                 </picture>
               </div>
 
@@ -224,7 +227,7 @@
                   <source type="image/webp" srcset="img/products/atlantis-desktop.webp 1x, img/products/atlantis-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/atlantis-mobile.png 1x, img/products/atlantis-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/atlantis-tablet.png 1x, img/products/atlantis-tablet@2x.png 2x">
-                  <img src="img/products/atlantis-desktop.png" srcset="img/products/atlantis-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Атлантис.">
+                  <img src="img/products/atlantis-desktop.png" srcset="img/products/atlantis-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Атлантис." loading="lazy">
                 </picture>
               </div>
 
@@ -255,7 +258,7 @@
                   <source type="image/webp" srcset="img/products/odysseus-desktop.webp 1x, img/products/odysseus-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/odysseus-mobile.png 1x, img/products/odysseus-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/odysseus-tablet.png 1x, img/products/odysseus-tablet@2x.png 2x">
-                  <img src="img/products/odysseus-desktop.png" srcset="img/products/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Одиссей.">
+                  <img src="img/products/odysseus-desktop.png" srcset="img/products/odysseus-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Одиссей." loading="lazy">
                 </picture>
               </div>
 
@@ -286,7 +289,7 @@
                   <source type="image/webp" srcset="img/products/olympia-desktop.webp 1x, img/products/olympia-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/olympia-mobile.png 1x, img/products/olympia-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/olympia-tablet.png 1x, img/products/olympia-tablet@2x.png 2x">
-                  <img src="img/products/olympia-desktop.png" srcset="img/products/olympia-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Олимпия.">
+                  <img src="img/products/olympia-desktop.png" srcset="img/products/olympia-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Олимпия." loading="lazy">
                 </picture>
               </div>
 
@@ -317,7 +320,7 @@
                   <source type="image/webp" srcset="img/products/aurora-desktop.webp 1x, img/products/aurora-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/aurora-mobile.png 1x, img/products/aurora-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/aurora-tablet.png 1x, img/products/aurora-tablet@2x.png 2x">
-                  <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Аврора.">
+                  <img src="img/products/aurora-desktop.png" srcset="img/products/aurora-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Аврора." loading="lazy">
                 </picture>
               </div>
 
@@ -348,7 +351,7 @@
                   <source type="image/webp" srcset="img/products/leonor-desktop.webp 1x, img/products/leonor-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/leonor-mobile.png 1x, img/products/leonor-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/leonor-tablet.png 1x, img/products/leonor-tablet@2x.png 2x">
-                  <img src="img/products/leonor-desktop.png" srcset="img/products/leonor-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Леонор.">
+                  <img src="img/products/leonor-desktop.png" srcset="img/products/leonor-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Леонор." loading="lazy">
                 </picture>
               </div>
 
@@ -379,7 +382,7 @@
                   <source type="image/webp" srcset="img/products/minion-desktop.webp 1x, img/products/minion-desktop@2x.webp 2x">
                   <source media="(max-width: 767px)" srcset="img/products/minion-mobile.png 1x, img/products/minion-mobile@2x.png 2x">
                   <source media="(max-width: 1023px)" srcset="img/products/minion-tablet.png 1x, img/products/minion-tablet@2x.png 2x">
-                  <img src="img/products/minion-desktop.png" srcset="img/products/minion-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Минион.">
+                  <img src="img/products/minion-desktop.png" srcset="img/products/minion-desktop@2x.png 2x" width="260" height="386" alt="Фотография с круиза Минион." loading="lazy">
                 </picture>
               </div>
 
@@ -410,9 +413,12 @@
           <div class="feedback__container">
             <div class="feedback__image">
               <picture>
+                <source type="image/webp" media="(max-width: 767px)" srcset="img/form-mountaines-mobile.webp 1x, img/form-mountaines-mobile@2x.webp 2x">
+                <source type="image/webp" media="(max-width: 1023px)" srcset="img/form-mountains-tablet.webp 1x, img/form-mountains-tablet@2x.webp 2x">
+                <source type="image/webp" srcset="img/form-mountains-desktop.webp 1x, img/form-mountains-desktop@2x.webp 2x">
                 <source media="(max-width: 767px)" srcset="img/form-mountaines-mobile.png 1x, img/form-mountaines-mobile@2x.png 2x">
                 <source media="(max-width: 1023px)" srcset="img/form-mountains-tablet.png 1x, img/form-mountains-tablet@2x.png 2x">
-                <img src="img/form-mountains-desktop.png" srcset="img/form-mountains-desktop@2x.png 2x" width="1366" height="555" aria-hidden="true" alt="">
+                <img src="img/form-mountains-desktop.png" srcset="img/form-mountains-desktop@2x.png 2x" width="1366" height="555" aria-hidden="true" alt="" loading="lazy">
               </picture>
             </div>
 
@@ -514,7 +520,7 @@
 
         <ul class="footer__social-list reset-list">
           <li>
-            <a class="footer__social-link" href="https://ok.ru/">
+            <a class="footer__social-link" href="#!">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="img/sprite.svg#icon-ok"></use>
               </svg>
@@ -523,7 +529,7 @@
           </li>
 
           <li>
-            <a class="footer__social-link" href="https://dzen.ru/">
+            <a class="footer__social-link" href="#!">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="img/sprite.svg#icon-zen"></use>
               </svg>
@@ -532,7 +538,7 @@
           </li>
 
           <li>
-            <a class="footer__social-link" href="https://www.reddit.com/">
+            <a class="footer__social-link" href="#!">
               <svg aria-hidden="true" focusable="false" width="20" height="20">
                 <use href="img/sprite.svg#icon-reddit"></use>
               </svg>

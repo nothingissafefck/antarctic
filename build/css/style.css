@@ -676,19 +676,22 @@ html {
   pointer-events: none;
 }
 
-.logo svg {
+.logo {
   color: #f9fbfd;
-  vertical-align: top;
   cursor: pointer;
 }
 
-.logo svg:hover,
-.logo svg:focus {
+.logo:hover,
+.logo:focus {
   color: #6fa8dc;
 }
 
-.logo svg:active {
+.logo:active {
   color: #45818e;
+}
+
+.logo svg {
+  vertical-align: top;
 }
 
 @-webkit-keyframes slide-in {
@@ -804,8 +807,8 @@ html {
 .hero {
   position: relative;
   margin-bottom: 120px;
-  -webkit-box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
-  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  -webkit-filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
+  filter: drop-shadow(0 4px 4px rgba(0, 0, 0, 0.25));
 }
 
 .hero__container {
@@ -841,9 +844,20 @@ html {
   overflow: hidden;
 }
 
+.hero__image picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .hero__image img {
-  min-width: 100%;
-  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  -o-object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 
 .about {
@@ -889,9 +903,20 @@ html {
   background-color: #9fc5e8;
 }
 
+.advantages__image picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .advantages__image img {
-  min-width: 100%;
-  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  -o-object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 
 .advantages__container {
@@ -973,9 +998,20 @@ html {
   height: 100%;
 }
 
-.products__image img {
+.products__image picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 100%;
   height: 100%;
+}
+
+.products__image img {
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  -o-object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 
 .products__list {
@@ -1073,9 +1109,20 @@ html {
   height: 100%;
 }
 
+.feedback__image picture {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
 .feedback__image img {
-  min-width: 100%;
-  min-height: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  width: 100%;
+  -o-object-position: 50% 100%;
+  object-position: 50% 100%;
 }
 
 .feedback__content {
@@ -1146,7 +1193,6 @@ html {
   color: rgba(1, 28, 64, 0.7);
   -webkit-text-fill-color: rgba(1, 28, 64, 0.7);
   background-color: #f9fbfd;
-  cursor: pointer;
 }
 
 .feedback__form input:hover,
@@ -1460,6 +1506,11 @@ html {
 }
 
 @media (max-width: 1280px) {
+  .products__list {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+  }
+
   .feedback__container p {
     padding-right: 50px;
   }
@@ -1498,6 +1549,8 @@ html {
 
   .hero {
     margin-bottom: 90px;
+    -webkit-filter: none;
+    filter: none;
   }
 
   .hero__container {
@@ -1589,11 +1642,6 @@ html {
   .products h2 {
     font-size: 26px;
     line-height: 39px;
-  }
-
-  .products__list {
-    -ms-grid-columns: (1fr)[2];
-    grid-template-columns: repeat(2, 1fr);
   }
 
   .products__item .products__content {
@@ -1715,7 +1763,7 @@ html {
   .header.is-open {
     position: fixed;
     top: 0;
-    right: 0;
+    left: 36px;
     height: 100vh;
     background-color: transparent;
   }
@@ -1727,26 +1775,22 @@ html {
     grid-template-columns: auto auto;
     -ms-grid-rows: auto 1fr;
     grid-template-rows: auto 1fr;
-    row-gap: 24px;
-    padding-left: 51px;
+    row-gap: 22px;
+    padding-top: 17px;
+    padding-left: 15px;
     background-color: #f9fbfd;
-    -webkit-clip-path: inset(0 0 0 36px);
-    clip-path: inset(0 0 0 36px);
     -webkit-animation: slide-in 0.3s;
     animation: slide-in 0.3s;
   }
 
   .header.is-open .header__logo {
     justify-self: flex-start;
-  }
-
-  .header.is-open .header__logo svg {
     color: #011c40;
   }
 
   .header.is-open .header__toggle {
     justify-self: flex-end;
-    margin-right: -15px;
+    margin-right: 20px;
   }
 
   .header.is-open .header__toggle-line {
@@ -1777,7 +1821,12 @@ html {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
     grid-column: 1/-1;
+    overflow: scroll;
   }
 
   .header.is-open .header__navigation-list {
@@ -2034,9 +2083,8 @@ html {
   }
 
   .footer__social-list {
-    grid-gap: 22px;
+    grid-gap: 17px;
     max-width: 89px;
-    padding-top: 5px;
   }
 
   .footer__social-list li:first-of-type svg {

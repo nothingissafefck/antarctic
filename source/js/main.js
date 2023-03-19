@@ -19,31 +19,12 @@ window.addEventListener('DOMContentLoaded', () => {
   // в load следует добавить скрипты, не участвующие в работе первого экрана
   window.addEventListener('load', () => {
     initMenu();
-    // initMap({
-    //   id: 'map',
-    //   initials: {
-    //     center: [59.9387165, 30.3230474],
-    //     controls: [],
-    //     zoom: 16,
-    //   },
-    //   placemark: [
-    //     {
-    //       hintContent: 'г. Санкт Петербург, ул. Большая Конюшенная, 19/8',
-    //     },
-    //     {
-    //       iconImageHref: 'img/svg/icon-map-pin.svg',
-    //       iconImageSize: [18, 22],
-    //       iconLayout: 'default#image',
-    //       iconShadow: false,
-    //     }
-    //   ],
-    // });
     const form = new Form();
     window.form = form;
     form.init();
 
     const map = document.getElementById('map');
-    const observer = new IntersectionObserver((entries, observer) => {
+    const observer = new IntersectionObserver((entries) => {
       if (entries[0].isIntersecting) {
         initMap({
           id: 'map',

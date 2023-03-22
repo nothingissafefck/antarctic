@@ -1,17 +1,10 @@
-@keyframes slide-in {
-  0% {
-    margin-left: 100vw;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-}
+@include slide-in;
 
 .header {
   position: absolute;
   z-index: 1;
   width: 100%;
+  color: $color-alice-blue;
 
   @media (max-width: $vp-max-mobile) {
     &.is-open {

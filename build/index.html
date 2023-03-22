@@ -35,9 +35,7 @@
         <button class="header__toggle" type="button" data-menu-close>
           <span class="header__toggle-line"></span>
 
-          <span class="visually-hidden">
-            Открыть меню.
-            </span>
+          <span class="visually-hidden">Открыть меню.</span>
         </button>
 
         <nav class="header__navigation">
@@ -171,7 +169,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Астория"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -202,7 +200,7 @@
 
               <div class="products__content">
                 <h3>Круиз “Элайн”</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Антарктида - Чили</dd>
                   <dt>Порт отправления</dt>
@@ -233,7 +231,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Атлантис"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Южная Георгия и Южные Сандвичевы Острова - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -264,7 +262,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Одиссей"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Чили - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -295,7 +293,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Олимпия"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Фолклендские острова - Южная Георгия - Антарктида</dd>
                   <dt>Порт отправления</dt>
@@ -326,7 +324,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Аврора"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Аргентина - Антарктида - Чили</dd>
                   <dt>Порт отправления</dt>
@@ -357,7 +355,7 @@
 
               <div class="products__content">
                 <h3>Круиз "Леонор"</h3>
-                <dl tabindex="-1">
+                <dl>
                   <dt>Маршрут</dt>
                   <dd>Чили - Южная Георгия - Антарктида - Аргентина</dd>
                   <dt>Порт отправления</dt>
@@ -432,17 +430,17 @@
                 <div class="feedback__form-container">
                   <span>Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</span>
 
-                  <label data-validate-type="text" data-required data-message-base="Это поле обязательно">
+                  <label data-validate-type="text" data-required data-limitation="name" data-message-base="Это поле обязательно" data-message-extra="Это поле заполнено некорректно">
                     <input type="text" name="name" placeholder="Имя" required>
                     <span class="visually-hidden">Имя.</span>
                   </label>
 
-                  <label data-validate-type="phone" data-required data-message-base="Это поле обязательно">
+                  <label data-validate-type="phone" data-required data-message-base="Это поле обязательно" data-message-extra="Это поле заполнено некорректно">
                     <input type="tel" name="phone" placeholder="Телефон" required>
                     <span class="visually-hidden">Телефон.</span>
                   </label>
 
-                  <label data-validate-type="email" data-required data-message-base="Это поле обязательно">
+                  <label data-validate-type="email" data-required data-message-base="Это поле обязательно" data-message-extra="Это поле заполнено некорректно">
                     <input type="email" name="email" placeholder="Email" required>
                     <span class="visually-hidden">Email.</span>
                   </label>

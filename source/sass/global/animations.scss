@@ -1,0 +1,11 @@
+@mixin slide-in {
+  @keyframes slide-in {
+    0% {
+      margin-left: 100vw;
+    }
+
+    100% {
+      margin-left: 0;
+    }
+  }
+}

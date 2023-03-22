@@ -1946,6 +1946,10 @@ html {
     padding-left: 0;
   }
 
+  .feedback .input-message {
+    left: 0;
+  }
+
   .feedback {
     margin-bottom: 0;
   }

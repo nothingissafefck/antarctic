@@ -8,6 +8,10 @@
     top: calc(100% - 3px);
     font-size: 12px;
 
+    @media (max-width: $vp-max-mobile) {
+      left: 0;
+    }
+
     &.is-invalid {
       color: $color-invalid;
     }

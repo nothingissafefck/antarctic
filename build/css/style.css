@@ -645,6 +645,26 @@ html {
   padding-right: 103px;
 }
 
+@-webkit-keyframes slide-in {
+  0% {
+    margin-left: 100vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
+@keyframes slide-in {
+  0% {
+    margin-left: 100vw;
+  }
+
+  100% {
+    margin-left: 0;
+  }
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -692,26 +712,6 @@ html {
 
 .logo svg {
   vertical-align: top;
-}
-
-@-webkit-keyframes slide-in {
-  0% {
-    margin-left: 100vw;
-  }
-
-  100% {
-    margin-left: 0;
-  }
-}
-
-@keyframes slide-in {
-  0% {
-    margin-left: 100vw;
-  }
-
-  100% {
-    margin-left: 0;
-  }
 }
 
 .header {

@@ -1,9 +1,11 @@
 const menu = document.querySelector('[data-menu]');
 const closeControls = document.querySelectorAll('[data-menu-close]');
+const content = document.querySelector('main');
 
 function toggleMenu() {
   menu.classList.toggle('is-open');
   document.body.classList.toggle('scroll-lock');
+  content.classList.toggle('menu-open');
 }
 
 function onBackdropClick(event) {

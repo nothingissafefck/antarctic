@@ -49,6 +49,11 @@ textarea {
   resize: none;
 }
 
+.menu-open {
+  background-color: $color-tangaroa;
+  filter: brightness(0.3);
+}
+
 // chrome autofill background removal
 // если на проекте у инпутов используются разные цвета фонов\текста -
 // удалите это из глобала и используйте локально с нужными цветами

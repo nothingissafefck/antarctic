@@ -1,11 +1,14 @@
 const menu = document.querySelector('[data-menu]');
-const closeControls = document.querySelectorAll('[data-menu-close]');
+const toggleMenuControls = document.querySelectorAll('[data-menu-toggle]');
+const closeMenuControls = document.querySelectorAll('[data-menu-close]');
 const content = document.querySelector('main');
 
-function toggleMenu() {
-  menu.classList.toggle('is-open');
-  document.body.classList.toggle('scroll-lock');
-  content.classList.toggle('menu-open');
+function toggleMenu(close) {
+  // eslint-disable-next-line no-undefined
+  const force = close !== undefined ? !close : undefined;
+
+  menu.classList.toggle('is-open', force);
+  content.classList.toggle('menu-open', force);
 }
 
 function onBackdropClick(event) {
@@ -14,21 +17,22 @@ function onBackdropClick(event) {
   }
 
   document.body.removeEventListener('click', onBackdropClick, true);
-  toggleMenu();
+  toggleMenu(true);
 }
 
-function onMenuToggle() {
+function onMenuToggle(close) {
   if (menu.classList.contains('is-open')) {
     document.body.removeEventListener('click', onBackdropClick, true);
-    toggleMenu();
+    toggleMenu(close);
 
     return;
   }
 
   document.body.addEventListener('click', onBackdropClick, true);
-  toggleMenu();
+  toggleMenu(close);
 }
 
 export function initMenu() {
-  closeControls.forEach((control) => control.addEventListener('click', onMenuToggle));
+  toggleMenuControls.forEach((control) => control.addEventListener('click', () => onMenuToggle()));
+  closeMenuControls.forEach((control) => control.addEventListener('click', () => onMenuToggle(true)));
 }
